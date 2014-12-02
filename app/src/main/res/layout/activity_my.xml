@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MyActivity">
+
+    <com.example.praveenraj.myapplication.ObservableScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#21406f"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff0000"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Text1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Place Holder Text\n\n\n\n\n\n\n"/>
+
+                    <TextView
+                        android:id="@+id/Text2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\n\n\n\n\n\n\n\n\n\n\n\nPlace Holder text"/>
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/placeholder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff0000"/>
+
+                <com.example.praveenraj.myapplication.SwipeableLayoutWithTextOverlay
+                    android:id="@+id/chiklet_details_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00ff00"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Text3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n\n\n\n\n\n\n\n\n\n\nPlace Holder text"/>
+ <TextView
+                    android:id="@+id/Text4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n\n\n\n\n\n\n\n\n\n\nPlace Holder text"/>
+ <TextView
+                    android:id="@+id/Text5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n\n\n\n\n\n\n\n\n\n\nPlace Holder text"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.example.praveenraj.myapplication.ObservableScrollView>
+
+
+</RelativeLayout>

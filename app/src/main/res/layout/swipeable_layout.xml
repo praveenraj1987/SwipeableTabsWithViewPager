@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/card_background">
+
+        <com.example.praveenraj.myapplication.SwipeableList
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:paddingRight="160dp">
+        </com.example.praveenraj.myapplication.SwipeableList>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"/>
+
+            <com.example.praveenraj.myapplication.ListLayout
+                android:id="@+id/overlay_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:divider="#21406f"
+                android:scrollbars="none"
+                android:orientation="vertical"
+                android:dividerHeight="10dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.example.praveenraj.myapplication.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        />
+</FrameLayout>
